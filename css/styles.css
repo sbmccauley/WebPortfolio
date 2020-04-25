@@ -29,12 +29,12 @@ h1 {
 }
 
 p {
-  color: gray;
+  color: #808080;
 }
 
 h2 {
   font-family: "Oswald";
-  color: gray;
+  color: #000;
 }
 
 .subHeading {
@@ -64,7 +64,7 @@ ul.navBar li a {
 }
 
 ul.navBar li a:hover {
-  color: #49a544;
+  color: #e89900;
 }
 
 ul.navBar .navHover {
@@ -78,9 +78,6 @@ ul.navBar .navHover {
   margin: 0 auto;
   height: 600px;
   padding-top: 250px;
-  margin-left: 5em;
-  margin-right: 5em;
-  margin-top: 3em;
 }
 
 @media (min-width: 600px) {
@@ -103,12 +100,12 @@ ul.navBar .navHover {
 .jumbotron h1 {
   text-align: center;
   align-items: center;
-  color: #49a544;
+  color: #e89900;
 }
 
 .projectLinks {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
 }
 
@@ -126,16 +123,25 @@ ul.navBar .navHover {
 
 .projectLinks .sphere {
   display: flex;
-  width: 120px;
-  height: 120px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   background-color: #fff;
   list-style-type: none;
   align-items: center;
   justify-content: center;
-  margin-left: 3em;
-  margin-right: 3em;
+  margin-left: 1em;
+  margin-right: 1em;
   transition-property: width, height;
+}
+
+@media (min-width: 600px) {
+  .projectLinks .sphere {
+    width: 120px;
+    height: 120px;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
 }
 
 .projectLinks .sphere a {
@@ -144,38 +150,38 @@ ul.navBar .navHover {
 }
 
 .projectLinks .sphere #blog {
-  color: #472a2f;
+  color: #000;
 }
 
 .projectLinks .sphere #evite {
-  color: #061238;
+  color: #a6a6a6;
 }
 
 .projectLinks .sphere #mobile {
-  color: #c19d67;
+  color: #000;
 }
 
 .projectLinks .sphere #collab {
-  color: #fd8f86;
+  color: #808080;
 }
 
 .projectLinks .s1 {
   transition-duration: 2s;
-  background-color: #ffd5d1;
+  background-color: #ffcc00;
 }
 
 .projectLinks .s2 {
-  background-color: #138de2;
+  background-color: #000;
   transition-duration: 4s;
 }
 
 .projectLinks .s3 {
-  background-color: #241508;
+  background-color: #808080;
   transition-duration: 6s;
 }
 
 .projectLinks .s4 {
-  background-color: #006174;
+  background-color: #b57700;
   transition-duration: 8s;
 }
 
@@ -186,7 +192,7 @@ ul.navBar .navHover {
 .socialMedia ul {
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 
@@ -205,7 +211,7 @@ ul.navBar .navHover {
 
 @media (min-width: 600px) {
   .socialMedia ul li {
-    flex-direction: column;
+    flex-direction: row;
   }
 }
 
@@ -219,7 +225,7 @@ ul.navBar .navHover {
 form {
   margin: 0 auto;
   padding: 15px;
-  border: solid 1px #49a544;
+  border: solid 1px #e89900;
   width: 15em;
 }
 /*# sourceMappingURL=styles.css.map */
