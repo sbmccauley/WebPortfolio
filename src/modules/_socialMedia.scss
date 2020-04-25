@@ -1,5 +1,9 @@
 .socialMedia {
     height: 200px;
+    padding: 0;
+    @include break(600px) {
+        padding: 3em;
+    }
     ul {
         display: flex;
         justify-content: center;
@@ -20,7 +24,10 @@
             a {
                 color: #fff;
                 text-decoration: none;
-                font-size: 2em;
+                @include break(600px) {
+                    font-size: 2em;
+                }
+                font-size: 1.5em;
                 cursor: pointer;
             }
         }

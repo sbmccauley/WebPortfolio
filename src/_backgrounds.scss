@@ -1,4 +1,5 @@
 .jumbotron {
+    padding-top: 30px;
     @include break(600px) {
         @include backImage('../images/mainPageBW.jpg');
         .mainHeading {
@@ -7,15 +8,19 @@
         .subHeading {
             font-size: 4em;
         }
+        padding-top: 250px
         
     }
-    @include backImage ('../images/mainPageMobile.jpg');
+    @include backImage ('../images/mainPageMobile2.jpg');
    
     h1 {
         text-align: center;
         align-items: center;
         color:  $fontColor;
         
+    }
+    .subHeading {
+        color: $bgColorMobile;
     }
     
 }

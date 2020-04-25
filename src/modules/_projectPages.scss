@@ -48,27 +48,42 @@
             #collab {
                 color: $fontColorCollab;
             }
+            #team {
+                color: $fontColorCollab;
+            }
         }
         
         .s1 {
-            transition-duration: 2s;
+            transition-duration: .5s;
             
             background-color: $bgColorBlog;
         }
         .s2 {
             background-color: $bgColorEvite;
             
-            transition-duration: 4s;
+            transition-duration: .5s;
         }
         .s3 {
             background-color: $bgColorMobile;
             
-            transition-duration: 6s;    
+            transition-duration: .5s;    
         }
         .s4 {
            background-color: $bgColorCollab;
+           display: none;
+           @include break(600px) {
+               display: flex;
+           }
            
-            transition-duration: 8s; 
+            transition-duration: .5s; 
         }
+        .s5 {
+            background-color: $bgColorCollab;
+            @include break(600px) {
+                display: none;
+            }
+            
+             transition-duration: .5s; 
+         }
 
     }

@@ -9,12 +9,17 @@ ul.navBar {
         margin-left: 6px;
         
         a {
-            color: #fff;
+            font-family: $portfolioFontSub;
+            color: $bgColorBlog;
             text-decoration: none;
             &:hover {
                 color: $fontColor;
             }
+            .logo {
+                font-family: $portfolioFont;
+            }
         }
+        
     }
     .navHover {
         color: orange;
