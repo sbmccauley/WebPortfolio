@@ -1,0 +1,51 @@
+/*
+    font-family: 'Oswald', sans-serif;
+
+*/
+body {
+    background-color: #c19d67;
+    color: white;	
+    font-family: 'Oswald', sans-serif;
+    margin-top: 30px;
+}
+h1 {
+    font-size: 2em;
+}
+section{
+    padding: 1em;
+    border: 5px single #241508;
+    max-width: 25em;
+    border-radius: 10px;
+    margin: auto;
+    font-weight: bold;
+}
+section#input {
+    background: url(../images/coffee-1239226_640\(1\).jpg);
+    color: #fff;
+}
+section#output {
+    background-color: #241508;
+    color: #ece0d1;
+}
+form#fmSaveAlbum {
+    background: #ece0d1;
+    color: #241508;
+    padding: 1em;
+    border-radius: 25px;
+    opacity: .9;
+
+}
+fieldset {
+    border: none;
+    
+}
+
+form label {
+    width: 10em;
+    float: left;
+}
+
+form input[type=text], form input[type=number], form textarea {
+    width: 15em;
+    padding: 3px;
+}

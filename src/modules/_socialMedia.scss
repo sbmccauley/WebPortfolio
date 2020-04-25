@@ -1,0 +1,28 @@
+.socialMedia {
+    height: 200px;
+    ul {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        @include break(600px) {
+            flex-direction: row;
+        }
+         li {
+             list-style-type: none;
+             @include break(600px) {
+                 flex-direction: column;
+                 
+             }
+            flex-direction: row;
+            margin: 20px;
+            padding: 5px;
+            a {
+                color: #fff;
+                text-decoration: none;
+                font-size: 2em;
+                cursor: pointer;
+            }
+        }
+    }
+}

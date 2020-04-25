@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ocean Conservation Society - organized to conduct scientific research to protect and conserve our oceans">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600i|Roboto:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+
+    <title>OCS | CONTACT US</title>
+</head>
+
+<body>
+    <div class="donateButtonFloat"><a href="donate.html"><span>DONATE</span></a></div>
+    <header>
+        <div id="contactHead">
+            <nav class="navBar">
+                <label for="showMenu" class="showMenu">
+                    <span class="fas fa-bars"></span>
+                </label>
+                <input type="checkbox" id="showMenu" role="button">
+                <ul class="menu">
+                    <li><a href="../index.html"><img src="../images/logo.png" alt="OCS Logo"></a></li>
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="donate.html">DONATE</a></li>
+                    <li><a href="research.html">RESEARCH</a></li>
+                    <li id="subFlyout">
+                        <a href="getInvolved.html">GET INVOLVED</a>
+                        <ul class="submenu">
+                            <li><a href="adopt.html">Adopt</a></li>
+                            <li><a href="internship.html">Internships</a></li>
+                            <li><a href="rideAlong.html">Ride Along</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="resources2.html">RESOURCES</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+
+                </ul>
+            </nav>
+            <div class="banner">
+
+                <h1>CONTACT US</h1>
+
+
+            </div>
+        </div>
+    </header>
+    <div class="wrapper">
+        <main id="contactPage">
+
+            <section id="contactForm">
+                <article>
+                    <!-- USE OF mailto LINK -->
+                    <form action="mailto:sbmccauley@gmail.com" method="post">
+                        <!-- making action mailto is a 'poor man's' form -->
+                        <div>
+                            <label for="uName">NAME:</label> <!-- proximity doesnt make the link between label and input -->
+                            <input type="text" name="uName" id="uName"> <!-- commonly id and name should match, 'for' in label matches 'id' of input, 'name' creates the reference -->
+                        </div>
+
+                        <div>
+                            <label for="email">EMAIL</label>
+                            <input type="email" name="email" id="email"> <!-- often you will wrap the label/input in a hook like a div or li -->
+                            <!-- type is email in html5, it will create it in valid email format -->
+                        </div>
+                        <div>
+                            <label for="phone">PHONE:</label> <!-- screen readers do not read placeholder text -->
+                            <input type="tel" id="phone" name="phone" placeholder="111-111-1111"> <!-- use input mask so it will dynamically format the information for example add parenthesis and dashes for phone number(w/javascript) -->
+                            <!-- you can also use placeholder attribute -->
+                            <!-- placeholders can be problematic for useability in some instances. perhaps use a span tag to include information next to the lable -->
+                            <!-- help text is better above the input field -->
+
+
+                        </div>
+                        <div>
+                            <label for="msg">MESSAGE:</label>
+                            <textarea name="message" id="msg"></textarea>
+                        </div>
+                        <div>
+
+                            <button type="submit">SUBMIT</button>
+                        </div>
+                    </form> <!-- best practice for aligning form elements: in mobile, probably stack -->
+                </article>
+
+            </section>
+            <section id="contactList">
+                <article>
+                    <ul>
+                        <li>
+                            Ocean Conservation Society <br>
+                            PO Box 12680 <br>
+                            Marina Del Rey, California <br>
+                            90295 <br>
+                            USA <br>
+                        </li>
+                        <li>
+                            General Inquiries <br>
+                            <a href="mailto:info@oceanconservation.org">info@oceanconservation.org</a> <br>
+                        </li>
+                        <li>
+                            Executive Director <br>
+                            Charles Saylan <br>
+                            <a href="mailto:csaylan@oceanconservation.org">csaylan@oceanconservation.org</a> <br>
+                        </li>
+                        <li>
+                            President <br>
+                            Maddalena Bearzi <br>
+                            <a href="mailto:mbearzi@oceanconservation.org">mbearzi@oceanconservation.org</a> <br>
+                        </li>
+                    </ul>
+                </article>
+            </section>
+
+
+        </main>
+
+    </div>
+    <div id="footer">
+        <footer>
+            <ul>
+                <li id="address">
+                    Ocean Conservation Society <br>
+                    PO Box 12680 <br>
+                    Marina Del Rey, California <br>
+                    90295 <br>
+                    USA <br>
+                </li>
+
+                <li><a href="http://www.facebook.com"><img src="../images/facebook50.png" alt="facebook"></a></li>
+                <li><a href="http://instagram.com"><img src="../images/instagram50.png" alt="instagram"></a></li>
+                <li><a href="http://youtube.com"><img src="../images/youtube50.png" alt="youtube"></a></li>
+                <li><a href="http://twitter.com"><img src="../images/twitter50.png" alt="twitter"></a></li>
+            </ul>
+
+
+            <p id="copy"> Copyright&copy;OCS 2019</p>
+        </footer>
+    </div>
+</body>
+
+</html>

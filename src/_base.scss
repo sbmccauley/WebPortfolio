@@ -1,0 +1,41 @@
+* {
+    
+    font-family: $portfolioFontText;
+}
+body {
+    max-width: 1080px;
+    background-color: #333;
+    color: #fff;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+a{
+    cursor: pointer;
+}
+  
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1 {
+    font-family: $portfolioFont;
+    background-color: rgba(255,255, 255, .6);
+    font-size: 3em;
+    
+
+}
+p {
+color:gray;
+}
+h2 {
+    font-family: $portfolioFontSub;
+    color: gray;
+}
+.subHeading {
+    font-size: 2em;
+   
+}
+.clearIt {
+    clear: both;
+}

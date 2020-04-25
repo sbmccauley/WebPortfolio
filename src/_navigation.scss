@@ -1,0 +1,22 @@
+ul.navBar {
+    list-style-type: none;
+    margin: 10px;
+    li {
+        float: right;
+        display: block;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-left: 6px;
+        
+        a {
+            color: #fff;
+            text-decoration: none;
+            &:hover {
+                color: $fontColor;
+            }
+        }
+    }
+    .navHover {
+        color: orange;
+    }
+}

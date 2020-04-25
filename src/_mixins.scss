@@ -1,0 +1,23 @@
+@mixin backImage($image, $height: 600px) {
+    background: url($image);
+    background-repeat: no-repeat;
+    background-position: center top;
+    margin: 0 auto;
+    height: $height;
+    
+    padding-top: 250px;
+}
+
+@mixin break($args...) { // USE OF IF ELSE
+    @if length($args) == 1 {
+        @media (min-width: nth($args, 1)) {
+        @content;
+        }
+    }
+    @if length($args) == 2 {
+        @media  (min-width: nth($args, 1)) and 
+                (max-width: nth($args, 2)) {
+            @content;
+        }
+    }
+}

@@ -1,0 +1,1350 @@
+/*
+
+    font-family: 'Roboto', sans-serif;
+
+    font-family: 'Open Sans', sans-serif;
+
+    colors:
+        lt brown: #907658;
+        navy: #001c28;
+        dark blue: #00374b;
+        medium blue: #006174;
+        lt blue:    #00955a9;
+        1t aqua:    #4bcddb;
+        pink:   #fd8f86; rgb(253, 143, 134);
+
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    background-image: linear-gradient(#4bcddb, #00374b);
+    color: #fff;
+    margin: 0 auto;
+    position: relative;
+    min-width: 240px;
+}
+
+header {
+    width: 100%;
+    height: auto;
+
+}
+
+.wrapper {
+    margin: 0 auto;
+    display: grid;
+}
+
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.banner {
+    display: block;
+    vertical-align: middle;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+
+
+}
+
+/* FLOATING DONATE BUTTON */
+.donateButtonFloat {
+    position: fixed;
+    top: 400px;
+    right: -3em;
+    background-color: #fd8f86;
+    border-radius: 50%;
+    z-index: 2;
+    height: 6em;
+    width: 6em;
+    transform: rotate(-90deg);
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+    padding-top: 1.5em;
+
+
+
+}
+
+
+/* END FLOATING DONATE BUTTON */
+
+/* Navigation Start */
+.navBar ul {
+    /** USE OF class SELECTOR**/
+    display: none;
+    list-style-type: none;
+
+
+}
+
+nav li {
+    text-align: center;
+
+}
+
+nav a {
+    padding: .6em;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+
+
+/* MOBILE NAVIGATION*/
+/* the checkbox hack */
+/* build out footer with '+' icon over the holiday*/
+nav input[type=checkbox] {
+    /** USE OF [attribute=value] SELECTOR**/
+    display: none;
+}
+
+nav input[type=checkbox]:checked ~ ul.menu {
+    /** USE OF general sibling combinator SELECTOR **/
+    /*  ~ general sibling combinator, in this instance it is looking for ul.menu (i.e. ul.menu is sibling of input) with input box checked*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.showMenu {
+    background-color: #006174;
+    text-align: center;
+    padding: .25em;
+    color: #fff;
+    display: block;
+    cursor: pointer;
+}
+
+.fa-bars {
+    /* icon fonts are easy to use, lightweight, scalable*/
+    margin-left: .25em;
+    font-size: 2em;
+    float: right;
+}
+
+/*END CHECKBOX HACK*/
+
+
+/*Navigation END
+
+
+/* Home Header */
+#homeHead {
+    /** USE OF id SELECTOR **/
+    position: relative;
+    background-image: url(../images/dolphinPod.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    padding-bottom: 2%;
+
+
+
+
+}
+
+.video {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    min-width: 100%;
+    min-height: 100%;
+
+    z-index: -1;
+    display: none;
+
+
+
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
+
+#homeBanner {
+
+
+
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(75, 205, 219, .9);
+    margin: 12% 20% 9% 20%;
+
+}
+
+#homeBanner h1 {
+    font-size: 1em;
+}
+
+#homeBanner h2 {
+    background-color: #fd8f86;
+}
+
+/* End HOme header */
+
+/* Contact head */
+#contactHead {
+    background-image: url(../images/contactHeadnew.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 10%;
+    padding-bottom: 10%;
+}
+
+/* End Contact head
+
+/* Donate HEad */
+#donateHead {
+    background-color: #00374b;
+    background: url(../images/donateHead.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#donateHead h1 {
+    text-align: center;
+    font-size: 2em;
+}
+
+
+
+/* ENd Donate Head
+
+/* About head */
+#aboutHead {
+    background-image: url(../images/aboutUsHead.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* new*/
+}
+
+/* End About Head */
+
+/* Research Head */
+#researchHead {
+    background-image: url(../images/researchHeadMobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 50%;
+
+
+}
+
+/* End Research Head */
+
+/* Ride along header */
+#rideHead {
+    background-image: url(../images/rideHead04.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 18%;
+
+
+}
+
+
+
+/* End Ride Along Header */
+/* Resource Head */
+#resourceHead {
+    background-image: url(../images/whaleAwareHeadmobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 10%;
+}
+
+/* End Resource Head*/
+
+/* Adopt Header */
+
+#adoptHead {
+    background-image: url(../images/adoptHead.jpg);
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+    background-size: cover;
+}
+
+
+
+/* End Adopt Header */
+
+
+/* Get involved Header */
+#involveHead {
+    background-image: url(../images/getinvolvedHead.jpg);
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+    background-size: cover;
+    padding-bottom: 100px;
+}
+
+
+
+/* End Get Involved Header */
+
+
+/* Internship Header */
+
+#internHead {
+    background-image: url(../images/internHead.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 50%;
+
+
+}
+
+
+
+
+/* End Insternship Header */
+
+
+/* Project Header */
+.projectHead {
+
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+
+
+}
+
+#pro01Head {
+    background-image: url(../images/pro01Head.jpg);
+    background-position: 0% 50%;
+}
+
+#pro02Head {
+    background-image: url(../images/pro02Head.jpg);
+    background-position: 0% 97%;
+}
+
+#pro03Head {
+    background-image: url(../images/pro03Head.jpg);
+    background-position: 0% 10%;
+}
+
+
+
+
+
+/* End Project Header */
+
+
+
+
+
+/* Home Main Content */
+#homeMain {
+    background-image: url(../images/dolphinVert.png);
+    background-repeat: no-repeat;
+    background-position: 0% 28%;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+#homeMain h1 {
+    text-align: center;
+    padding: 10px;
+}
+
+#homeArticles {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#homeArticles article {
+    display: block;
+    padding: 1em;
+    margin: 2em;
+    background-color: #000;
+}
+
+#homeArticles p {
+    font-size: 1.5em;
+    margin: 2em;
+}
+
+#homeAsides {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#homeAsides aside {
+    background-color: #0095a9;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    width: 10em;
+    height: 10em;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+
+
+    padding: 20px;
+    margin: 4em;
+}
+
+/* End Home Main Content */
+
+
+/* Adopt Main Content */
+
+#adoptMain {
+    Background-image: url(../images/topo.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: block;
+
+
+}
+
+#adoptImages {
+    margin: 0 30px;
+    background-color: rgba(255, 255, 255, 0.5);
+
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+#adoptImages .imgbox {
+    width: 80%;
+    height: auto;
+    text-align: center;
+
+}
+
+
+
+
+
+/* End Adopt Main Content */
+
+
+/*Get Involved Main Content */
+#involveMain {
+    Background-image: url(../images/topo.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: block;
+
+
+}
+
+#involveImages {
+    margin: 0 30px;
+    background-color: rgba(255, 255, 255, 0.5);
+
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+#involveImages .imgbox {
+    width: 80%;
+    height: auto;
+    text-align: center;
+
+}
+
+/* End Get Involved Main Content */
+
+
+
+/* CSS for Circle Image hovers on both Get involved and adopt */
+.imgbox {
+    position: relative;
+    border-radius: 50%;
+}
+
+.cirImg {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: .7;
+    transition: .5s ease;
+    background-color: rgba(0, 55, 75, .7);
+    border-radius: 50%;
+
+}
+
+
+
+
+.overlayText {
+    color: #fff;
+    font-size: 1.5em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+/* End Circle Image hover for Get Involved  and Adopt*/
+
+/* Internship Main Content */
+#internMain {
+    Background-image: url(../images/internBG.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 100% 0%;
+    display: block;
+    width: 100%;
+
+
+}
+
+#internArticles {
+    margin: 0 30px;
+    background-color: rgba(0, 97, 116, 0.5);
+    display: block;
+    height: auto;
+    text-align: left;
+    padding: 30px;
+
+}
+
+#internMain h1 {
+    text-align: center;
+}
+
+#internMain p {
+    text-align: left;
+}
+
+#internMain div {
+    padding: 20px;
+}
+
+/* End Internship Main Content */
+/* Project Main Content */
+.projectMain {
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    display: block;
+
+
+}
+
+#pro01Back {
+    background-image: url(../images/pro01.jpg);
+    background-position: 80% 0%;
+
+}
+
+#pro02Back {
+    background-image: url(../images/pro02bg.gif);
+    background-position: 100% 0%;
+
+}
+
+#pro03Back {
+    background-image: url(../images/pro03BG.jpg);
+    background-position: 100% 0%;
+
+}
+
+#projectArticles {
+    margin: 0 30px;
+    background-color: rgba(0, 97, 116, .5);
+    display: block;
+    height: auto;
+    text-align: left;
+    padding: 30px;
+
+}
+
+#projectArticles h3 {
+    padding-bottom: 12px;
+}
+
+#projectArticles div ul {
+    padding-left: 15px;
+}
+
+.projectMain h1 {
+    text-align: center;
+}
+
+.projectMain p {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+#projectMain div {
+    padding: 20px;
+}
+
+
+
+
+/* End Project Main Content */
+/* Ride Along Main content */
+
+#rideMain {
+    Background-image: url(../images/ridealongBg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 100% 0%;
+    display: block;
+
+
+}
+
+#rideArticles {
+    margin: 0 30px;
+    background-color: rgba(0, 97, 116, 0.5);
+
+    padding: 30px;
+
+}
+
+#rideMain h1,
+p {
+    text-align: center;
+}
+
+#rideForm input[type=text],
+input[type=email] {
+    width: 100%;
+
+}
+
+#rideForm div {
+    margin-top: 20px;
+}
+
+#rideForm button {
+    width: 100%;
+    background-color: deeppink;
+    height: 3em;
+    color: white;
+    margin-top: 20px;
+}
+
+
+/*End Ride Along Main Content */
+
+
+
+/* Research Main Content */
+
+#researchPage {
+    background: url(../images/topo.png) no-repeat;
+}
+
+.researchArticles {
+    padding: 20px 20px;
+    margin: 20px 20px;
+    background-color: rgba(144, 118, 88, .80);
+}
+
+.researchText {
+    background-color: #000;
+    padding: 20px;
+
+
+}
+
+.researchText ul {
+
+    text-align: left;
+    padding-left: 25px;
+}
+
+.readMore {
+    background-color: #4bcddb;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+
+
+}
+
+
+/* End Research main content */
+
+/* Contact Page Main Content */
+
+
+#contactPage {
+    background-image: url(../images/contactBGnew.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 40% 0%;
+    padding: 20px 20px;
+
+
+}
+
+
+#contactList {
+    font-size: .75em;
+    background-color: rgba(0, 97, 116, .5);
+    padding: 15px 15px;
+    margin-bottom: 15px;
+
+
+}
+
+#contactList ul,
+#donateForm ul {
+    list-style-type: none;
+
+}
+
+#contactList ul li {
+    padding: 10px 10px;
+}
+
+#contactForm {
+    border: solid 1px #fff;
+    background-color: rgba(255, 255, 255, .5);
+    padding: 10px 10px;
+    margin-bottom: 15px;
+
+}
+
+label {
+    color: black;
+    font-weight: bold;
+}
+
+input#uName,
+input#email,
+input#phone,
+#firstName,
+#lastName {
+    width: 100%;
+    height: 2em;
+    border: solid 1px black;
+    background-color: lightgrey;
+}
+
+input#address1,
+#address2 {
+    width: 100%;
+    height: 2em;
+    border: solid 1px black;
+    background-color: lightgrey;
+
+}
+
+#country {
+    width: 30px;
+    height: 2em;
+    border: solid 1px black;
+    background-color: lightgrey;
+}
+
+#city {
+    width: 75px;
+    height: 2em;
+    margin-right: 15px;
+    background-color: lightgrey;
+}
+
+#state {
+    margin-right: 15px;
+    background-color: lightgrey;
+}
+
+#state,
+#zip {
+    width: 50px;
+    height: 2em;
+    background-color: lightgrey;
+}
+
+.cityStateZip {
+    float: left;
+}
+
+#cvv,
+#exp {
+    width: 50px;
+    height: 2em;
+    background-color: lightgrey;
+
+}
+
+#exp {
+    width: 60px;
+    height: 2em;
+    background-color: lightgrey;
+
+}
+
+
+#cardNum {
+    width: 60%;
+    height: 2em;
+    background-color: lightgrey;
+
+}
+
+textarea#msg {
+    /** USE OF element#id SELECTOR **/
+    width: 100%;
+    height: 200px;
+    background-color: lightgrey;
+    border: solid 1px black;
+}
+
+button {
+    font-size: 1.5em;
+    font-weight: normal;
+    padding: .6em;
+    background-color: #fd8f86;
+    color: #fff;
+    border: solid 1px black;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    width: 95%;
+    height: 2em;
+
+}
+
+/* End Contact page Main Content */
+
+/* Resource Main Content */
+#resourcesPage {
+    background-color: #fff;
+
+}
+
+#resourcesPage article figure img {
+    width: 100%;
+    height: auto;
+
+}
+
+#whaleGuidelinesGraph,
+/** USE OF group SELECTOR **/
+#whaleViewing {
+
+    width: 100px;
+    height: auto;
+}
+
+#cetaceansDrawings {
+
+    width: 200px;
+    height: auto;
+}
+
+/* End Resource Main Content */
+
+/* Donate Main Content */
+
+#donatePage {
+    background: url(../images/donateBg.jpg) no-repeat;
+    /*align-items: center;   new*/
+}
+
+#donateStart {
+    margin: 15px 40px 15px 15px;
+
+}
+
+#donateStart p {
+    margin-bottom: 15px;
+}
+
+#donateStart legend {
+    display: none;
+    border: none;
+}
+
+#donateForm {
+    background-color: rgba(255, 255, 255, .5);
+    margin-left: 15px;
+    border: none;
+    padding: 15px;
+
+
+}
+
+#donationSelection {
+    padding: 15px;
+
+
+}
+
+#donationSelection li {
+    margin-left: 10px;
+    margin-right: 10px;
+    border: none;
+
+}
+
+#patronInformation,
+#paymentInformation,
+#donateNow,
+#donationRadioButtons {
+    padding: 15px;
+    border: none;
+}
+
+
+/* End Donate Main Content */
+
+/* About Us main content */
+.staffText {
+    /* new*/
+    padding: 5px;
+    margin: 15px;
+}
+
+#aboutPage {
+    background: url(../images/vincent-delegge-n-h_8sLHtmI-unsplash.png) no-repeat;
+    color: #fff;
+}
+
+#OCSteam {
+    padding: 15px;
+}
+
+/* End About us main Content */
+
+
+
+
+
+
+
+/* END MAIN CONTENT CSS !!!!!! */
+/* Begin Footer */
+footer {
+    background: url(../images/footer.png);
+}
+
+footer #address {
+    font-size: .75em;
+    display: block;
+}
+
+footer ul {
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+
+
+
+
+}
+
+footer ul li {
+    padding: 1px 5px;
+    list-style-type: none;
+}
+
+footer #copy {
+    font-size: .5em;
+    text-align: right;
+
+}
+
+
+footer img {
+
+    width: 30%;
+}
+
+footer p {
+    margin-right: 20px;
+}
+
+#address {
+    margin-right: auto;
+}
+
+
+/* LARGE SCREEN DISPLAY */
+@media screen and (min-width: 600px) {
+
+    .wrapper {
+        /*        width: 100%;*/
+        max-width: 960px;
+    }
+
+
+    /* Nav bar large */
+    nav input[type=checkbox]:checked ~ ul.menu {
+        /*  ~ general sibling combinator, in this instance it is looking for ul.menu (i.e. ul.menu is sibling of input) with input box checked*/
+        display: flex;
+        flex-direction: row;
+    }
+
+    nav li {
+        border: none;
+    }
+
+    .navBar ul {
+        display: flex;
+        flex-direction: row;
+
+        list-style-type: none;
+        justify-content: space-between;
+        /* new*/
+        align-items: center;
+    }
+
+    #navLogo {
+        margin-right: auto;
+    }
+
+    nav ul li {
+        margin: 1px 5px 5px 1px;
+    }
+
+    .fa-bars {
+        display: none;
+    }
+
+
+
+
+    .navBar .menu li {
+
+        position: relative;
+    }
+
+    .menu li .submenu {
+        position: absolute;
+        display: none;
+
+    }
+
+    .menu li .submenu li a {
+        color: #006174;
+        font-size: .75em;
+    }
+
+
+    .menu li:hover ul {
+        /** USE OF pseudo SELECTOR **/
+        display: flex;
+        flex-direction: row;
+        z-index: 3;
+        background-color: rgba(255, 255, 255, .5);
+
+    }
+
+    /* End Nav Bar Large */
+
+    /* Home Page Large */
+    #homeHead {
+        background-image: none;
+        padding: 0;
+
+
+    }
+
+    .video {
+        display: block;
+    }
+
+
+    #homeBanner h1 {
+        font-size: 1em;
+    }
+
+
+    #homeArticles {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    #homeArticles article {
+        width: 100%;
+
+    }
+
+    #homeArticles article p {
+        margin: 0 1em 1em 0;
+        font-size: .7em;
+
+    }
+
+    #homeArticles p {
+        font-size: 1em;
+    }
+
+    .artHome {
+        transition: transform .2s;
+    }
+
+    .artHome:hover {
+        transform: scale(1.2);
+    }
+
+    /* End Home Large */
+
+    /* adopt large */
+
+    #adoptImages {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #adoptImages .imgbox {
+        width: 28%;
+        height: auto;
+
+    }
+
+    /* End adopt large */
+
+    /* Get Involved Large */
+
+    #involveImages {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    #involveImages .imgbox {
+        width: 50%;
+        height: auto;
+
+    }
+
+    /* End Get Involved Large */
+
+    /*large circle image hover overlay */
+
+    .overlay {
+        opacity: 0;
+    }
+
+    .imgbox:hover .overlay {
+        opacity: 1;
+    }
+
+    /* End large Circle Image haver overlay */
+
+    /* Ride ALong Large */
+    #rideMain {
+        background-position: 100% 0%;
+    }
+
+    #rideArticles {
+        width: 50%;
+    }
+
+    /* End Ride ALong Large */
+
+    /* Internship large */
+
+    #internArticles {
+        width: 50%;
+        height: auto;
+    }
+
+    /* End Internship Large */
+
+    /* Projects Large */
+    #projectArticles {
+        width: 50%;
+        height: auto;
+    }
+
+    #pro01Back {
+
+        background-position: 100% 0%;
+
+    }
+
+    /* End Projects Large */
+
+    /*********RESEARCH LARGE SCREEN START **********/
+    #researchHead {
+        background-image: url(../images/researchHeadLargeScreen.jpg);
+
+    }
+
+    .researchArticles {
+        display: flex;
+        flex-wrap: wrap;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        grid-gap: 5px;
+        grid-template-rows: 300px;
+
+        margin-top: 5px;
+        margin-bottom: 5px;
+        /*align-items: center;*/
+    }
+
+    .researchArticles > article {
+        flex: 1;
+        text-align: center;
+        align-items: center;
+    }
+
+    .researchText {
+
+        background-color: rgba(255, 255, 255, .1);
+
+    }
+
+    /****CONTACT PAGE LARGE SCREEN START ***/
+
+
+    #contactPage {
+        display: flex;
+        flex-direction: row-reverse;
+        background-position: 100% 0%;
+
+    }
+
+    #contactForm {
+        flex-basis: 50%;
+    }
+
+    #contactForm,
+    #contactList {
+        margin-left: 20px;
+        margin-right: 20px;
+
+    }
+
+    #contactList {
+        flex-basis: 50%
+    }
+
+    /** RESOURCES LARGE SCREEN START *****/
+    #resourcesHead {
+        background-image: url(../images/whaleAwareHead.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 0% 0%;
+    }
+
+    #resourcesPage > section {
+        display: flex;
+        justify-content: center;
+    }
+
+    #resourcesPage section article {
+        flex-basis: 50%;
+    }
+
+    #resourcesPage aside {
+        justify-content: center;
+    }
+
+    /******* RESOURCES LARGE SCREEN END***/
+
+
+    /**** DONATE LARGE SCREEN START ****/
+
+    #donatePage {
+        display: flex;
+
+    }
+
+    #donateStart {
+        flex-basis: 65%;
+        padding-right: 50px;
+    }
+
+    #donateGraph {
+        padding-top: 500px;
+        padding-left: 50px;
+        padding-right: 15px;
+        flex-basis: 35%;
+        align-items: center;
+    }
+
+    /**** DONATE LARGE SCREEN END ***/
+
+    /*** ABOUT US LARGE SCREEN START ***/
+    #aboutBios {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .staffArticles {
+        align-items: center;
+        flex-basis: 50%;
+    }
+
+    /**** ABOUT US LARGE SCREEN END **/
+
+
+
+
+
+
+}
+
+/* Extra LArge Screen */
+
+@media screen and (min-width: 970px) {
+    #homeBanner h1 {
+        font-size: 2em;
+    }
+
+}

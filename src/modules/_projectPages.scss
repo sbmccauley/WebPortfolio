@@ -1,0 +1,68 @@
+.projectLinks {
+        &:hover .sphere {
+            width: 200px;
+            height: 200px;
+        }
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        @include break(600px) {
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .sphere {
+            display: flex;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background-color: #fff;
+            list-style-type: none;
+            align-items: center;
+            justify-content: center;
+            margin-left: 3em;
+            margin-right: 3em;
+            transition-property: width, height;
+
+            a{  
+            font-family: $portfolioFontSub;
+                text-decoration: none;
+                
+            }
+            #blog {
+                color: $fontColorBlog;                
+            }
+            #evite {
+                color: $fontColorEvite;
+            }
+            #mobile {
+                color: $fontColorMobile;
+
+            }
+            #collab {
+                color: $fontColorCollab;
+            }
+        }
+        
+        .s1 {
+            transition-duration: 2s;
+            
+            background-color: $bgColorBlog;
+        }
+        .s2 {
+            background-color: $bgColorEvite;
+            
+            transition-duration: 4s;
+        }
+        .s3 {
+            background-color: $bgColorMobile;
+            
+            transition-duration: 6s;    
+        }
+        .s4 {
+           background-color: $bgColorCollab;
+           
+            transition-duration: 8s; 
+        }
+
+    }

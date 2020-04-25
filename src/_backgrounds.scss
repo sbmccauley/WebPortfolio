@@ -1,0 +1,23 @@
+.jumbotron {
+    @include break(600px) {
+        @include backImage('../images/mainPageBW.jpg');
+        .mainHeading {
+            font-size: 5em;
+        }
+        .subHeading {
+            font-size: 4em;
+        }
+        
+    }
+    @include backImage ('../images/mainPageMobile.jpg');
+   
+    h1 {
+        text-align: center;
+        align-items: center;
+        color:  $fontColor;
+        
+    }
+    margin-left: 5em;
+    margin-right: 5em;
+    margin-top: 3em;
+}
