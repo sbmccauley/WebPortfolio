@@ -4,6 +4,7 @@
         @include backImage('../images/mainPageBW.jpg');
         .mainHeading {
             font-size: 5em;
+            
         }
         .subHeading {
             font-size: 4em;
@@ -21,6 +22,11 @@
     }
     .subHeading {
         color: $bgColorMobile;
+    }
+    p {
+        span {
+            font-weight: bold;
+        }
     }
     
 }

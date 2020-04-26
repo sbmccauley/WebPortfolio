@@ -16,7 +16,9 @@ form {
     
 }
 .contact {
-   
+    h1 {
+        margin-left: 10px;
+    }
     @include backImage('../images/phoneContact.jpg');
 }
 #submit {
