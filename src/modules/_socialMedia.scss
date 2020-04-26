@@ -1,8 +1,14 @@
 .socialMedia {
     height: 200px;
-    padding: 0;
+    padding-top: 120px;
+    @include break(361px) {
+        padding-top: 45px;
+    }
     @include break(600px) {
-        padding: 3em;
+       padding-top: 180px;
+    }
+    @include break(865px) {
+        padding-top: 60px;
     }
     ul {
         display: flex;
@@ -19,7 +25,7 @@
                  
              }
             flex-direction: row;
-            margin: 20px;
+            margin: 15px;
             padding: 5px;
             a {
                 color: #fff;

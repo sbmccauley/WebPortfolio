@@ -18,7 +18,7 @@ a {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -31,10 +31,11 @@ h1 {
 p {
   font-family: "Oswald";
   color: #fff;
-  padding: 2em;
+  padding: 1.5em;
   margin: 0 2em 2em 2em;
   background-color: rgba(76, 85, 85, 0.3);
   max-width: 700px;
+  font-size: 1.5em;
 }
 
 .subHeading {
@@ -63,10 +64,11 @@ ul.navBar li a {
   font-family: "Oswald";
   color: #abd74d;
   text-decoration: none;
+  font-size: 1.5em;
 }
 
 ul.navBar li a:hover {
-  color: #7a8528;
+  color: #e4f486;
 }
 
 ul.navBar li a .logo {
@@ -81,7 +83,9 @@ ul.navBar .navHover {
   padding-top: 30px;
   background: url("../images/mainPageMobile2.jpg");
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
   margin: 0 auto;
   height: 600px;
 }
@@ -90,7 +94,9 @@ ul.navBar .navHover {
   .jumbotron {
     background: url("../images/mainPageBW.jpg");
     background-repeat: no-repeat;
-    background-position: center top;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
     margin: 0 auto;
     height: 600px;
     padding-top: 250px;
@@ -219,12 +225,24 @@ ul.navBar .navHover {
 
 .socialMedia {
   height: 200px;
-  padding: 0;
+  padding-top: 120px;
+}
+
+@media (min-width: 361px) {
+  .socialMedia {
+    padding-top: 45px;
+  }
 }
 
 @media (min-width: 600px) {
   .socialMedia {
-    padding: 3em;
+    padding-top: 180px;
+  }
+}
+
+@media (min-width: 865px) {
+  .socialMedia {
+    padding-top: 60px;
   }
 }
 
@@ -244,7 +262,7 @@ ul.navBar .navHover {
 .socialMedia ul li {
   list-style-type: none;
   flex-direction: row;
-  margin: 20px;
+  margin: 15px;
   padding: 5px;
 }
 
@@ -277,11 +295,26 @@ form div {
   margin: 2em;
 }
 
+form div label {
+  font-family: "Oswald";
+  font-size: 1.5em;
+}
+
 .contact {
   background: url("../images/phoneContact.jpg");
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
   margin: 0 auto;
   height: 600px;
+}
+
+#submit {
+  width: 10em;
+  background-color: #abd74d;
+  color: #14160c;
+  font-family: "Oswald";
+  font-size: 1.5em;
 }
 /*# sourceMappingURL=styles.css.map */
