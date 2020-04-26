@@ -81,7 +81,7 @@ ul.navBar .navHover {
 
 .jumbotron {
   padding-top: 30px;
-  background: url("../images/mainPageMobile2.jpg");
+  background: url("../images/mainPageMobile2.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -92,7 +92,7 @@ ul.navBar .navHover {
 
 @media (min-width: 600px) {
   .jumbotron {
-    background: url("../images/mainPageBW.jpg");
+    background: url("../images/mainPageBW.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -305,7 +305,7 @@ form div label {
 }
 
 .contact {
-  background: url("../images/phoneContact.jpg");
+  background: url("../images/phoneContact.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
